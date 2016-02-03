@@ -14,6 +14,7 @@
 		A2C137DA1C616C0F009EDF42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C137D81C616C0F009EDF42 /* LaunchScreen.storyboard */; };
 		A2C137E51C616C10009EDF42 /* MotionSurvey1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C137E41C616C10009EDF42 /* MotionSurvey1Tests.swift */; };
 		A2C137F01C616C10009EDF42 /* MotionSurvey1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C137EF1C616C10009EDF42 /* MotionSurvey1UITests.swift */; };
+		A2C137FE1C616F14009EDF42 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C137FD1C616F14009EDF42 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A2C137EB1C616C10009EDF42 /* MotionSurvey1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionSurvey1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C137EF1C616C10009EDF42 /* MotionSurvey1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionSurvey1UITests.swift; sourceTree = "<group>"; };
 		A2C137F11C616C10009EDF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2C137FD1C616F14009EDF42 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C137FE1C616F14009EDF42 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		A2C137C31C616C0F009EDF42 = {
 			isa = PBXGroup;
 			children = (
+				A2C137FD1C616F14009EDF42 /* CoreMotion.framework */,
 				A2C137CE1C616C0F009EDF42 /* MotionSurvey1 */,
 				A2C137E31C616C10009EDF42 /* MotionSurvey1Tests */,
 				A2C137EE1C616C10009EDF42 /* MotionSurvey1UITests */,
@@ -193,6 +197,7 @@
 				TargetAttributes = {
 					A2C137CB1C616C0F009EDF42 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 83HYM26E6D;
 					};
 					A2C137DF1C616C10009EDF42 = {
 						CreatedOnToolsVersion = 7.2;
@@ -399,10 +404,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MotionSurvey1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = princeton.MotionSurvey1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MotionSurvey1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = princeton.MotionSurvey1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
